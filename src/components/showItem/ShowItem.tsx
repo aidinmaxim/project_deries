@@ -21,18 +21,6 @@ const ShowItem: React.FC<IShow> = ({ show }) => {
       </div>
       <div className={styles.name}><p>{show.name}<br /><small>{show.network}</small></p></div>
     </div>
-
-
-    // <div>
-    // {/*  <h2>{show.name}</h2>*/}
-    // {/*  <p>{show.start_date}</p>*/}
-    // {/*  <p>{show.end_date}</p>*/}
-    // {/*  <p>{show.country}</p>*/}
-    // {/*  <p>{show.network}</p>*/}
-    // {/*  <p>{show.status}</p>*/}
-    // {/*  <img src={show.image_thumbnail_path} />*/}
-    //
-    // {/*</div>*/}
   )
 }
 

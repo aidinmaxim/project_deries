@@ -25,29 +25,29 @@ const ShowDetails = () => {
           </MySwiper>
         </div>
         <div className={styles.descriptionBlock}>
-          <div className="text-block">{showDetails.description}
-            <small>
-              (
-              source: <a className="text-color-grey" href={showDetails.description_source}>
-              {parseUrl(showDetails.description_source).hostname}
-            </a>
-              )
-            </small>
-          </div>
-          <div className="details-block">
+          <div className="text-block">
+            <div dangerouslySetInnerHTML={{ __html: showDetails.description }} />
+            {showDetails.description_source && (
+              <small>
+                (source: <a className="text-color-grey" href={showDetails.description_source}>
+                  {parseUrl(showDetails.description_source).hostname}</a>)
+              </small>
+            )}
+        </div>
+        <div className="details-block">
 
-            <div className="column"><b>Genres: </b>
-              {console.log(showDetails.genres)}
-              {/*{showDetails.genres?.split(' | ')}*/}
-              <br /><b>Station: </b> {showDetails.network}<br /><b>Rating: </b> {showDetails.rating} from {showDetails.rating_count} users<br />
-            </div>
-            <div className="column">
-              <b>Status: </b> {showDetails.status}<br /><b>Start: </b> {showDetails.start_date}</div>
+          <div className="column"><b>Genres: </b>
+            {console.log(showDetails.genres)}
+            {/*{showDetails.genres?.split(' | ')}*/}
+            <br /><b>Station: </b> {showDetails.network}<br /><b>Rating: </b> {showDetails.rating} from {showDetails.rating_count} users<br />
           </div>
+          <div className="column">
+            <b>Status: </b> {showDetails.status}<br /><b>Start: </b> {showDetails.start_date}</div>
         </div>
       </div>
     </div>
-  )
+</div>
+)
 }
 
 export default ShowDetails

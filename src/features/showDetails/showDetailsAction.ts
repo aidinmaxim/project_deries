@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 export const fetchShowDetails = createAsyncThunk(
-  'show/fetchShowDetail',
+  'showDetails/fetchShowDetail',
   async (permalink: string, thunkAPI) => {
     try {
       const res = await axios.get(`https://www.episodate.com/api/show-details?q=${permalink}`)

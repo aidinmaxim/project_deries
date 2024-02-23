@@ -1,4 +1,3 @@
-import IShow from "./ShowDetails"
 import IShowDetails from "./ShowDetails"
 
 export default interface IShowsState {

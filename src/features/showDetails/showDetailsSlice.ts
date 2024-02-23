@@ -3,13 +3,32 @@ import IShowsState from "./types/ShowDetailState";
 import { fetchShowDetails } from "./showDetailsAction";
 
 const initialState: IShowsState = {
-  showDetails: [],
+  showDetails: {
+    id: 0,
+    name: '',
+    permalink: '',
+    description: '',
+    description_source: '',
+    start_date: '',
+    end_date: '',
+    country: '',
+    status: '',
+    runtime: 0,
+    network: '',
+    youtube_link: '',
+    image_path: '',
+    image_thumbnail_path: '',
+    rating: '',
+    rating_count: '',
+    genres: [],
+    pictures: [],
+  },
   isLoading: false,
   error: null,
 }
 
 export const showDetailsSlice = createSlice({
-  name: 'shows',
+  name: 'showDetails',
   initialState,
   reducers: { },
   extraReducers: (builder) => {

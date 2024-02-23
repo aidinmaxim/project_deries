@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-font-color: rgb(147, 157, 250);
+  --primary-font-color-hover: rgb(82, 98, 245);
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+ * {
+   box-sizing: border-box;
+ }
+
+ p {
+   margin: 0 0 1em;
+   line-height: 1.5em;
+ }
+
+main  .container {
+    display: block;
+    max-width: 100%!important;
+}
+
+.grid {
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 0;
+    margin: -1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    main .container {
+        width: 1127px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    main .container {
+        width: 933px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    main .container {
+        width: 723px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    main .container {
+        width: 100%;
+    }
+}

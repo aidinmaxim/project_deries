@@ -1,0 +1,45 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background: url('assets/images/background_index.png') left center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: calc(2rem - 0.14285em) 0 1rem;
+    padding: 0;
+}
+
+.center {
+    width: 100%;
+    padding: 0.5em;
+    display: table;
+    height: 100vh;
+}
+
+.mod {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height: 1.2em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+}
+
+.red {
+    color: #f05647;
+}
